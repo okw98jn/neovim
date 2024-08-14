@@ -1,0 +1,8 @@
+# スペースを使用
+indent_type = "Spaces"
+
+indent_width = 4
+
+# 文字列のクォートスタイルをシングルクォートに設定
+quote_style = "AutoPreferSingle"
+

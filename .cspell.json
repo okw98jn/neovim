@@ -1,0 +1,24 @@
+{
+    "words": [
+        "keymaps",
+        "nvim",
+        "luarc",
+        "stylua",
+        "bufferline",
+        "gitsigns",
+        "hlchunk",
+        "lspsaga",
+        "lualine",
+        "neogit",
+        "noice",
+        "autopairs",
+        "navic",
+        "vimdoc"
+    ],
+    "ignoreRegExpList": [
+        "/^\\s*\\[.*\\]: \\s*$/",
+        "/^<.*>$/",
+        "/https?:\\/\\/[\\w/:%#\\$&\\?\\(\\)~\\.=\\+\\-]+/",
+        "/[\\/].*$/"
+    ]
+}
