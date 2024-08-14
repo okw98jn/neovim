@@ -55,3 +55,6 @@ vim.cmd([[
   hi DoubleByteSpace term=underline ctermbg=blue guibg=darkgray
   match DoubleByteSpace /　/
 ]])
+
+-- 深刻度の高い順にソート
+vim.diagnostic.config({ severity_sort = true })
