@@ -7,6 +7,12 @@ return {
     },
 
     config = function()
+        local signs = { Error = ' ', Warn = ' ', Hint = '💡', Info = ' ' }
+        for type, icon in pairs(signs) do
+            local hl = 'DiagnosticSign' .. type
+            vim.fn.sign_define(hl, { text = icon, texthl = hl })
+        end
+
         require('mason').setup()
         require('mason-lspconfig').setup_handlers({
             function(server)
