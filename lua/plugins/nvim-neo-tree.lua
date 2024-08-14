@@ -20,7 +20,7 @@ return {
                 },
             },
             view = {
-                width = 40,
+                width = 50,
             },
             git = {
                 enable = true,
