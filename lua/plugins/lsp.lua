@@ -15,6 +15,15 @@ return {
 
         require('mason').setup()
         require('mason-lspconfig').setup_handlers({
+            tsserver = function()
+                local lspconfig = require("lspconfig")
+                lspconfig.tsserver.setup({
+                    on_attach = function(client, bufnr)
+                        client.server_capabilities.documentFormattingProvider = false
+                        client.server_capabilities.documentRangeFormattingProvider = false
+                    end,
+                })
+            end,
             function(server)
                 local opt = {
                     capabilities = require('cmp_nvim_lsp').default_capabilities(
