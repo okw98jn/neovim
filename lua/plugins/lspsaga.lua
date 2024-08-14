@@ -6,6 +6,10 @@ return {
     },
 
     config = function()
-        require('lspsaga').setup({})
+        require('lspsaga').setup({
+            lightbulb = {
+                sign = false, -- サインカラム（行番号の横）のアイコンを非表示にする
+            },
+        })
     end,
 }
